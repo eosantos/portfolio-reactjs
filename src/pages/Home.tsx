@@ -8,7 +8,7 @@ export function Home() {
   return (
     <section>
       <NavBar />
-      <Container fluid className="home-section h-screen" id="home">
+      <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row className="home-row flex justify-around">

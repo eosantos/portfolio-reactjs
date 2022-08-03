@@ -38,7 +38,6 @@ button:focus {
   z-index: 999999;
   background-color: #0c0513;
   background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -263,13 +262,12 @@ button:focus {
   z-index: -1;
   background-image: var(--image-gradient), url(../assets/img/bg-home.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
+  padding-bottom: 250px !important;
   padding-top: 30px !important;
 }
 
 .home-content {
-  padding: 16rem 0 2rem !important;
+  padding: 8rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -325,7 +323,6 @@ button:focus {
   .home-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 4rem 0 2rem !important;
   }
 }
 
@@ -771,4 +768,31 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.h1-about {
+  font-size: 54px;
+}
+
+.text-about {
+  width: 50%;
+  text-align: left;
+  padding-left: 50px !important;
+}
+
+.text-about-important {
+  color: #cd5ff8;
+}
+
+@media (max-width: 767px) {
+  .home-content {
+    padding: none;
+  }
+}
+
+@media (max-width: 645px) {
+  .text-about {
+    width: 80%;
+    flex-wrap: wrap;
+  }
 }
