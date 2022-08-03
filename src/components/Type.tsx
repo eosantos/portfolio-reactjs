@@ -4,7 +4,7 @@ function Type() {
   return (
     <Typewriter
       options={{
-        strings: ["Developer", "Fontend", "Designer"],
+        strings: ["Developer", "Frontend", "Designer"],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,

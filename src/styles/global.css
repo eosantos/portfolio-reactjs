@@ -321,6 +321,34 @@ button:focus {
   }
 }
 
+@media (max-width: 767px) {
+  .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 0 2rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-avtar-rocket {
+    margin-top: 25px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .my-avtar-rocket {
+    max-width: 240px;
+  }
+}
+
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;

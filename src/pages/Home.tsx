@@ -10,10 +10,9 @@ export function Home() {
       <NavBar />
       <Container fluid className="home-section h-screen" id="home">
         <Particle />
-        <Container className="home-content flex justify-center">
-          {" "}
-          <Row className="contents">
-            <Col md={7} className="home-header pr-32">
+        <Container className="home-content">
+          <Row className="home-row flex justify-around">
+            <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Olá!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -34,20 +33,17 @@ export function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }} className="pl-32">
+            <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid my-avtar-rocket"
                 style={{ maxHeight: "450px" }}
               />
             </Col>
           </Row>
         </Container>
       </Container>
-      {/* <div className="h-screen bg-gray-900 text-9xl text-gray-50 pt-96">
-        <h1 className="flex justify-center">Home</h1>
-      </div> */}
     </section>
   );
 }
