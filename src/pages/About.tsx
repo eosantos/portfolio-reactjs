@@ -2,6 +2,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import aboutLogo from "../assets/me-and-rocket-2.svg";
 import NavBar from "../components/Navbar";
 import Particle from "../components/Particle";
+import Techstack from "../components/Techstack";
+import { AiOutlineApartment } from "react-icons/ai";
 
 export function About() {
   return (
@@ -53,6 +55,16 @@ export function About() {
               </span>
             </Col>
           </Row>
+          <h1 className="project-heading-about mt-12 flex justify-center align-middle">
+            <strong className="mr-6">
+              <AiOutlineApartment />
+            </strong>
+            <strong className="purple inline-flex justify-between">
+              Skills
+            </strong>
+          </h1>
+
+          <Techstack />
         </Container>
       </Container>
     </section>
