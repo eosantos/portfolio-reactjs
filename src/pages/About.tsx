@@ -4,6 +4,9 @@ import NavBar from "../components/Navbar";
 import Particle from "../components/Particle";
 import Techstack from "../components/Techstack";
 import { AiOutlineApartment } from "react-icons/ai";
+import Toolstack from "../components/Toolstack";
+import { GrConfigure } from "react-icons/gr";
+import { DiAptana } from "react-icons/di";
 
 export function About() {
   return (
@@ -65,6 +68,15 @@ export function About() {
           </h1>
 
           <Techstack />
+
+          <h1 className="project-heading-about mt-12 flex justify-center align-middle">
+            <strong className="mr-6 icon-toll align-middle">
+              <DiAptana />
+            </strong>
+            <strong className="purple">Tools</strong>
+          </h1>
+
+          <Toolstack />
         </Container>
       </Container>
     </section>
