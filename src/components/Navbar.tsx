@@ -33,7 +33,8 @@ function NavBar() {
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className="nav-teste"
+      // className={navColour ? "sticky" : "navbar"}
     >
       <Container className="w-screen  border border-violet-1">
         <Navbar.Brand href="/" className="d-flex">

@@ -11,7 +11,7 @@ export function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row className="home-row flex justify-around">
+          <Row className="home-row flex justify-around pb-10">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Olá!{" "}

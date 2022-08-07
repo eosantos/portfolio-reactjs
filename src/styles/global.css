@@ -266,6 +266,12 @@ button:focus {
   padding-top: 30px !important;
 }
 
+.bg-section {
+  position: relative;
+  z-index: -1;
+  background-color: #121214;
+}
+
 .home-content {
   padding: 8rem 0 2rem !important;
   color: whitesmoke;
@@ -474,9 +480,10 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  z-index: -1;
+  padding-top: 100px !important;
+  padding-bottom: 70px !important;
+  background-image: var(--image-gradient), url(../assets/img/bg-home.jpg);
 }
 
 .project-card {
@@ -757,8 +764,20 @@ button:focus {
   line-height: 1.4em !important;
   background-color: #934cce5e !important;
   padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
+  display: flex;
+  align: center;
+  justify-content: center;
+}
+
+.git-btn-inner {
+  line-height: 1.4em !important;
+  background-color: #934cce5e !important;
+  width: 40px;
+  height: 40px;
+  padding: inherit;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .fork-btn-inner:hover {
@@ -817,4 +836,30 @@ button:focus {
 .icon-toll {
   color: white;
   text-color: white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  margin: auto;
+  justify-content: center;
+}
+
+.test-bg {
+  height: 100vh;
+}
+
+.tech-icons-projects {
+  font-size: 4.5em !important;
+  padding: 30px;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
 }
